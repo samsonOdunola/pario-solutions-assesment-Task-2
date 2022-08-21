@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.table {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  padding: 0.5vw;
+  text-align: center;
+}
+.headlines {
+  padding: 0.6vw 1vw;
+}
+.headlines h1 {
+  font-size: 1.3vw;
+  margin: 0.5vw 0;
+}
+.error {
+  text-align: center;
+  color: red;
+}
