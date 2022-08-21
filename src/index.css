@@ -20,3 +20,8 @@
   text-align: center;
   color: red;
 }
+.loading {
+  text-align: center;
+  color: blue;
+  font-size: 6vw;
+}

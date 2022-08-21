@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Table from "react-bootstrap/Table";
-import Loadingicon from "./components/spinner";
+
 const Task2 = () => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
@@ -33,7 +33,7 @@ const Task2 = () => {
   return (
     <div>
       {loading ? (
-        <Loadingicon />
+        <h3 className="loading">Loading..</h3>
       ) : error ? (
         <h3 className="error">{error}</h3>
       ) : (
@@ -80,7 +80,7 @@ const Task2 = () => {
                     <td>{state}</td>
                     <td>{numberWithCommas(confirmedCases)}</td>
                     <td>{numberWithCommas(casesOnAdmission)}</td>
-                    <td>{numberWithCommas(casesOnAdmission)}</td>
+                    <td>{numberWithCommas(discharged)}</td>
                     <td>{numberWithCommas(death)}</td>
                   </tr>
                 );
